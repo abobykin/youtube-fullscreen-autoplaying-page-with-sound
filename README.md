@@ -1,2 +1,5 @@
-# youtube-fullscreen-autoplaying-page-with-sound
-Simple webpage with embedded fullscreen Youtube with enabled autoplaying with sound
+# Embedded Youtube autoplay with sound
+
+### Simple webpage with embedded fullscreen Youtube with enabled autoplaying with sound (if it's not restricted in browser)
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- NOTES: -->
+  <!-- attribute 'style' => contains a styles rules, it may be deleted if fullscreen view doesn't needed -->
+  <!-- attribute 'src' => contains needed VIDEO URL and has very important query parameters right after it for proper autoplay functionality (autoplay, mute and enablejsapi), they all should be on initially -->
+
+  <body>
+    <iframe
+      name="youtube video"
+      id="ytplayer"
+      type="text/html"
+      frameborder="0"
+      allowfullscreen
+      src="https://www.youtube.com/embed/NJuSStkIZBg?autoplay=1&mute=1&showinfo=0&enablejsapi=1"
+      style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 10px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 999999;
+      "
+    ></iframe>
+  </body>
+</html>
+
+<!-- Important note!  -->
+<!-- This script will turn the video sound ON but it will be not workable if sound is restricted in browser  -->
+
+<script src="./script.js"></script>
