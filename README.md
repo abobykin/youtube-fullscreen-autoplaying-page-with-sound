@@ -5,4 +5,6 @@
 ![Link Name](./screenshot.jpg)
 
 
-Deployed on Netlify on address - https://cerulean-kangaroo-00b2e7.netlify.app/
+Deployed on Netlify: 
+
+https://cerulean-kangaroo-00b2e7.netlify.app/
