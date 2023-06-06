@@ -7,6 +7,10 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- NOTES: -->
+    <!-- attribute 'src' => contains needed VIDEO URL and has very important query parameters right after it for proper autoplay functionality (autoplay, mute and enablejsapi), they all should be on initially -->
+    <!-- attribute 'style' => contains a styles rules, it may be deleted if fullscreen view doesn't needed -->
+
     <iframe
       name="youtube video"
       id="ytplayer"
@@ -29,7 +33,6 @@
         z-index: 999999;
       "
     ></iframe>
-
   </body>
   <!-- Important note!  -->
   <!-- WEB STANDARD - RULES for any media will be allowed to autoplay => https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#autoplay_availability  -->
