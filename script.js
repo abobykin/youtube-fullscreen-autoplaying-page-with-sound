@@ -16,12 +16,17 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady() {
+  // NOTE: WHY IT IS NOT WORKING ANYWHERE?
+
   console.log('onPlayerReady triggered')
+
   player.playVideo()
   player.unMute()
 }
 
 function onPlayerStateChange() {
+  // NOTE: WHY IT IS NOT WORKING ANYWHERE?
+
   console.log('onPlayerStateChange works')
   player.unMute()
 }
