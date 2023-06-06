@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <!-- NOTES: -->
@@ -12,32 +19,8 @@
   <!-- attribute 'style' => contains a styles rules, it may be deleted if fullscreen view doesn't needed -->
 
   <body>
-    <iframe
-      name="youtube video"
-      id="ytplayer"
-      type="text/html"
-      frameborder="0"
-      allowfullscreen
-      src="https://www.youtube.com/embed/NJuSStkIZBg?autoplay=1&muted=1&origin=https%3A%2F%2Fcerulean-kangaroo-00b2e7.netlify.app&showinfo=0&enablejsapi=1"
-      style="
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        right: 10px;
-        width: 100%;
-        height: 100%;
-        border: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        z-index: 999999;
-      "
-    ></iframe>
+    <main>
+      <a href="./player.html">To the page with YouTube</a>
+    </main>
   </body>
 </html>
-
-<!-- Important note!  -->
-<!-- This script will turn the video sound ON but it will be not workable if sound is restricted in browser  -->
-
-<script src="script.js"></script>
