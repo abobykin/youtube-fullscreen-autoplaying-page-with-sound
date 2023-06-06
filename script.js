@@ -9,8 +9,8 @@ var player
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('#ytplayer', {
     events: {
-      onReady: onPlayerReady,
-      onStateChange: onPlayerStateChange,
+      "onReady": onPlayerReady,
+      "onStateChange": onPlayerStateChange,
     },
   })
 }
