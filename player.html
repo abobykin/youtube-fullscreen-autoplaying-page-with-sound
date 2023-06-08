@@ -46,6 +46,8 @@
     var player
     function onPlayerReady() {
       console.log('onPlayerReady')
+      player.stopVideo()
+      player.mute()
       player.playVideo()
       player.unMute()
     }
