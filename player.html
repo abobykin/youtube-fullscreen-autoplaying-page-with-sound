@@ -17,7 +17,7 @@
       type="text/html"
       frameborder="0"
       allowfullscreen
-      src="https://www.youtube.com/embed/NJuSStkIZBg?autoplay=1&origin=https%3A%2F%2Fcerulean-kangaroo-00b2e7.netlify.app&showinfo=0&enablejsapi=1"
+      src="https://www.youtube.com/embed/NJuSStkIZBg?autoplay=1&origin=https%3A%2F%2Fcerulean-kangaroo-00b2e7.netlify.app&showinfo=0&enablejsapi=1&autoplay=1"
       style="
         position: absolute;
         top: 0px;
@@ -36,4 +36,27 @@
   </body>
   <!-- Important note!  -->
   <!-- WEB STANDARD - RULES for any media will be allowed to autoplay => https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#autoplay_availability  -->
+  <script>
+    var tag = document.createElement('script')
+
+    tag.src = '//www.youtube.com/iframe_api'
+    var firstScriptTag = document.getElementsByTagName('script')[0]
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+    var player
+    function onPlayerReady() {
+      console.log('onPlayerReady')
+      player.playVideo()
+      player.unMute()
+    }
+
+    function onYouTubeIframeAPIReady() {
+      console.log('onYouTubeIframeAPIReady')
+      player = new YT.Player('ytplayer', {
+        events: {
+          onReady: onPlayerReady,
+        },
+      })
+    }
+  </script>
 </html>
